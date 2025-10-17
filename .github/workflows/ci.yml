@@ -41,6 +41,14 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          # If the key matches the cache, it won't download the dependencies again, so CI can run more efficiently
+          key: ${{ runner.os }}-pip-${{ env.PYTHON_VERSION }}-${{ hashFiles('**/requirements.txt') }}
+          restore-keys:
+            ${{ runner.os }}-pip-${{ env.PYTHON_VERSION }}-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
