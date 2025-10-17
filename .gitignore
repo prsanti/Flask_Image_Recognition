@@ -183,7 +183,8 @@ cython_debug/
 .pypirc
 
 # Ken's python environment file
-shell.nix
+ken-config/
+
 # .pylintrc
 .python-version
 .vscode/
