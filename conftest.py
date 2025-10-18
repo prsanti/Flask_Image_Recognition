@@ -1,4 +1,6 @@
-
+"""
+This module sets up the testing environment for the Flask application using pytest.
+"""
 
 import pytest
 from app import app  # This imports the Flask app for testing

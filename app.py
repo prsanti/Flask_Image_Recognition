@@ -31,7 +31,7 @@ def predict_image_file():
             pred = predict_result(img)
             return render_template("result.html", predictions=str(pred))
         else:
-            return render_template("index.html")
+            return None
 
     except Exception as e:
         e = "File cannot be processed."
