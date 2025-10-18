@@ -564,6 +564,7 @@ check-str-concat-over-line-jumps=no
 
 
 [TYPECHECK]
+ignored-modules = flask,pytest,keras,keras.models,keras.utils,numpy,PIL
 
 # List of decorators that produce context managers, such as
 # contextlib.contextmanager. Add to this list to register other decorators that
