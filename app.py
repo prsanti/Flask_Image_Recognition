@@ -30,8 +30,6 @@ def predict_image_file():
             img = preprocess_img(request.files['file'].stream)
             pred = predict_result(img)
             return render_template("result.html", predictions=str(pred))
-        else:
-            return None
 
     except Exception as e:
         e = "File cannot be processed."

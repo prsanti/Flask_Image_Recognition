@@ -1,4 +1,8 @@
-import os
+"""
+Unit and Integration Tests for Model Functions
+- This module contains tests for the model functions including image preprocessing and prediction.
+"""
+
 import pytest
 import numpy as np
 from keras.models import load_model

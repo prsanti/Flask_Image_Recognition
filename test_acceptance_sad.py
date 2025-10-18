@@ -1,17 +1,7 @@
-# test_acceptance_sad.py
-
-import pytest
-from app import app
-
-@pytest.fixture
-def client():
-    """
-    Fixture for the Flask test client.
-    - Purpose: Set up a test client for making requests to the Flask app during testing.
-    - Usage: Provides a `client` object to use for HTTP request simulations.
-    """
-    with app.test_client() as client:
-        yield client
+"""
+Acceptance Tests for Sad Path Scenarios in Image Uploads
+- This module contains acceptance tests for failure scenarios in image uploads to the Flask application.
+"""
 
 def test_acceptance_missing_file(client):
     """

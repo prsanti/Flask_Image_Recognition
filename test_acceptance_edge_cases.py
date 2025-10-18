@@ -1,8 +1,9 @@
-# test_acceptance_edge_cases.py
+"""
+Acceptance Tests for Edge Cases in Image Uploads
+- This module contains acceptance tests for various edge cases in image uploads to the Flask application.
+"""
 
 from io import BytesIO
-import pytest
-from threading import Thread
 
 # Helper function for concurrent image uploads
 def upload_image(client, img_data):
