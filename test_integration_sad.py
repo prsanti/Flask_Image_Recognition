@@ -1,6 +1,6 @@
 """
 Integration Tests for Sad Path Scenarios in Image Uploads
-- This module contains integration tests for failure scenarios in image uploads to the Flask application.
+- This module contains integration tests for failure scenarios
 """
 
 def test_missing_file(client):

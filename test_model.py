@@ -23,7 +23,7 @@ def test_preprocess_img():
     processed_img = preprocess_img(img_path)
 
     # Check that the output shape is as expected
-    assert processed_img.shape == (1, 224, 224, 3), "Processed image shape should be (1, 224, 224, 3)"
+    assert processed_img.shape == (1, 224, 224, 3), "Processed image should be (1, 224, 224, 3)"
 
     # Check that values are normalized (between 0 and 1)
     assert np.min(processed_img) >= 0 and np.max(processed_img) <= 1, "Image pixel values should be normalized between 0 and 1"

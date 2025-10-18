@@ -1,6 +1,6 @@
 """
 Acceptance Tests for Edge Cases in Image Uploads
-- This module contains acceptance tests for various edge cases in image uploads to the Flask application.
+- This module contains acceptance tests for various edge cases
 """
 
 from io import BytesIO
