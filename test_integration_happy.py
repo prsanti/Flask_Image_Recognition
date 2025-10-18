@@ -1,7 +1,9 @@
-# test_integration_happy.py
+"""
+Acceptance Tests for Happy Path Scenarios in Image Uploads
+- This module contains acceptance tests for successful image uploads to the Flask application.
+"""
 
 from io import BytesIO
-import pytest
 
 def test_successful_prediction(client):
     """Test the successful image upload and prediction."""
